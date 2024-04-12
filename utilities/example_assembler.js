@@ -24,6 +24,10 @@ const hostLanguages = [
         escapes: [['`', '\\`'], ['$', '\\$']],
     },
     {
+        template: 'powershell.ejs', output: 'example.ps1',
+        escapes: [],
+    },
+    {
         template: 'typescript.ejs', output: 'example.ts',
         escapes: [['`', '\\`'], ['$', '\\$']],
     },

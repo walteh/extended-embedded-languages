@@ -8,6 +8,7 @@ import { readEmbeddedSpecs } from './embedded_language_specs.js';
 import { buildCppSyntax } from './syntax_templates/cpp_syntax.js';
 import { buildGoSyntax } from './syntax_templates/go_syntax.js';
 import { buildJavascriptSyntax } from './syntax_templates/javascript_syntax.js';
+import { buildPowerShellSyntax } from "./syntax_templates/powershell_syntax.js";
 import { buildTypescriptSyntax } from './syntax_templates/typescript_syntax.js';
 import { buildPythonSyntax } from './syntax_templates/python_syntax.js';
 import { buildRustSyntax } from './syntax_templates/rust_syntax.js';
@@ -37,69 +38,78 @@ const SYNTAX_DIR = 'syntaxes';
  * - snippet_end: The string that will be inserted to end a snippet.
  */
 const HOST_LANGUAGE_SPECS = [
-    {
-        file: 'cpp.embedded.json',
-        root_scopes: ['source.cpp'],
-        syntax_builder: buildCppSyntax,
-        vsname: 'cpp',
-        embedded_scope: 'source.cpp.embedded.codeblock',
-        snippet_start: 'R"<ID>(',
-        snippet_end: ')<ID>"',
-    },
-    {
-        file: 'go.embedded.json',
-        root_scopes: ['source.go'],
-        syntax_builder: buildGoSyntax,
-        vsname: 'go',
-        embedded_scope: 'source.go.embedded.codeblock',
-        snippet_start: '/*<ID>*/ `',
-        snippet_end: '`',
-    },
-    {
-        file: 'python.embedded.json',
-        root_scopes: ['source.python'],
-        syntax_builder: buildPythonSyntax,
-        vsname: 'python',
-        embedded_scope: 'source.python.embedded.codeblock',
-        snippet_start: '"""<COMMENT>',
-        snippet_end: '"""',
-    },
-    {
-        file: 'yaml.embedded.json',
-        root_scopes: ['source.yaml', 'text.yaml.jinja'],
-        syntax_builder: buildYamlSyntax,
-        vsname: 'yaml',
-        embedded_scope: 'source.yaml.embedded.codeblock',
-        snippet_start: '| #<ID>',
-        snippet_end: '',
-    },
-    {
-        file: 'javascript.embedded.json',
-        root_scopes: ['source.js'],
-        syntax_builder: buildJavascriptSyntax,
-        vsname: 'javascript',
-        embedded_scope: 'source.js.embedded.codeblock',
-        snippet_start: '/*<ID>*/ `',
-        snippet_end: '`',
-    },
-    {
-        file: 'typescript.embedded.json',
-        root_scopes: ['source.ts'],
-        syntax_builder: buildTypescriptSyntax,
-        vsname: 'typescript',
-        embedded_scope: 'source.ts.embedded.codeblock',
-        snippet_start: '/*<ID>*/ `',
-        snippet_end: '`',
-    },
-    {
-        file: 'rust.embedded.json',
-        root_scopes: ['source.rust'],
-        syntax_builder: buildRustSyntax,
-        vsname: 'rust',
-        embedded_scope: 'source.rust.embedded.codeblock',
-        snippet_start: '/*<ID>*/ r#"',
-        snippet_end: '"#',
-    },
+  {
+    file: "cpp.embedded.json",
+    root_scopes: ["source.cpp"],
+    syntax_builder: buildCppSyntax,
+    vsname: "cpp",
+    embedded_scope: "source.cpp.embedded.codeblock",
+    snippet_start: 'R"<ID>(',
+    snippet_end: ')<ID>"',
+  },
+  {
+    file: "go.embedded.json",
+    root_scopes: ["source.go"],
+    syntax_builder: buildGoSyntax,
+    vsname: "go",
+    embedded_scope: "source.go.embedded.codeblock",
+    snippet_start: "/*<ID>*/ `",
+    snippet_end: "`",
+  },
+  {
+    file: "python.embedded.json",
+    root_scopes: ["source.python"],
+    syntax_builder: buildPythonSyntax,
+    vsname: "python",
+    embedded_scope: "source.python.embedded.codeblock",
+    snippet_start: '"""<COMMENT>',
+    snippet_end: '"""',
+  },
+  {
+    file: "yaml.embedded.json",
+    root_scopes: ["source.yaml", "text.yaml.jinja"],
+    syntax_builder: buildYamlSyntax,
+    vsname: "yaml",
+    embedded_scope: "source.yaml.embedded.codeblock",
+    snippet_start: "| #<ID>",
+    snippet_end: "",
+  },
+  {
+    file: "javascript.embedded.json",
+    root_scopes: ["source.js"],
+    syntax_builder: buildJavascriptSyntax,
+    vsname: "javascript",
+    embedded_scope: "source.js.embedded.codeblock",
+    snippet_start: "/*<ID>*/ `",
+    snippet_end: "`",
+  },
+  {
+    file: "powershell.embedded.json",
+    root_scopes: ["source.powershell"],
+    syntax_builder: buildPowerShellSyntax,
+    vsname: "powershell",
+    embedded_scope: "source.powershell.embedded.codeblock",
+    snippet_start: "<#<ID>#> @\"",
+    snippet_end: "",
+  },
+  {
+    file: "typescript.embedded.json",
+    root_scopes: ["source.ts"],
+    syntax_builder: buildTypescriptSyntax,
+    vsname: "typescript",
+    embedded_scope: "source.ts.embedded.codeblock",
+    snippet_start: "/*<ID>*/ `",
+    snippet_end: "`",
+  },
+  {
+    file: "rust.embedded.json",
+    root_scopes: ["source.rust"],
+    syntax_builder: buildRustSyntax,
+    vsname: "rust",
+    embedded_scope: "source.rust.embedded.codeblock",
+    snippet_start: '/*<ID>*/ r#"',
+    snippet_end: '"#',
+  },
 ];
 
 /**

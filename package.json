@@ -223,6 +223,44 @@
         }
       },
       {
+        "scopeName": "source.powershell.embedded.codeblock",
+        "injectTo": [
+          "source.powershell"
+        ],
+        "path": "syntaxes/powershell.embedded.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.bat.powershell": "bat",
+          "meta.embedded.block.cpp.powershell": "cpp",
+          "meta.embedded.block.css.powershell": "css",
+          "meta.embedded.block.html.powershell": "html",
+          "meta.embedded.block.ini.powershell": "ini",
+          "meta.embedded.block.javascript.powershell": "javascript",
+          "meta.embedded.block.json.powershell": "json",
+          "meta.embedded.block.jsonc.powershell": "jsonc",
+          "meta.embedded.block.python.powershell": "python",
+          "meta.embedded.block.shellscript.powershell": "shellscript",
+          "meta.embedded.block.sql.powershell": "sql",
+          "meta.embedded.block.toml.powershell": "toml",
+          "meta.embedded.block.xml.powershell": "xml",
+          "meta.embedded.block.yaml.powershell": "yaml",
+          "meta.embedded.block.c.powershell": "c",
+          "meta.embedded.block.hlsl.powershell": "hlsl",
+          "meta.embedded.block.glsl.powershell": "glsl",
+          "meta.embedded.block.metal.powershell": "metal",
+          "meta.embedded.block.wgsl.powershell": "wgsl",
+          "meta.embedded.block.lua.powershell": "lua",
+          "meta.embedded.block.makefile.powershell": "makefile",
+          "meta.embedded.block.graphql.powershell": "graphql",
+          "meta.embedded.block.typescript.powershell": "typescript",
+          "meta.embedded.block.latex.powershell": "latex",
+          "meta.embedded.block.tex.powershell": "tex",
+          "meta.embedded.block.dot.powershell": "dot",
+          "meta.embedded.block.arm.powershell": "arm",
+          "meta.embedded.block.asm-intel-x86-generic.powershell": "asm-intel-x86-generic",
+          "meta.embedded.block.handlebars.powershell": "handlebars"
+        }
+      },
+      {
         "scopeName": "source.ts.embedded.codeblock",
         "injectTo": [
           "source.ts"
@@ -300,5 +338,10 @@
       }
     ],
     "snippets": []
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.24.0",
+    "csv": "^6.3.8",
+    "ejs": "^3.1.9"
   }
 }

@@ -66,6 +66,24 @@ code goes here
 `;
 ```
 
+## Host language - Powershell
+
+Powershell uses _here-strings_ to specify the language.
+(e.g. `` `@"...text..."@` ``) but must be multiline.
+A here-string in Powershell looks like
+```powershell
+$s = @"
+...text
+"@
+```
+
+To specify the language, you can use a inline comment before the string:
+```powershell
+$s = <#lang_id#>@"
+code goes here
+"@
+```
+
 Or as a _tagged template_, this style expects there to be a function
 with the name of the language which can process the string (see the
 [tagged template
