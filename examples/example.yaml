@@ -349,6 +349,14 @@ embedded_examples:
       {{/each}}
     </ul>
 
+  # PowerShell Example
+  sample_ps1: | #ps1
+    function Add-Numbers ($num1, $num2) {
+        $sum = $num1 + $num2
+        return $sum
+    }
+    
+
 
 
 ######################################################################

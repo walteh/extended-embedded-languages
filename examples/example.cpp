@@ -441,6 +441,17 @@ static const char* hbs_string = R"hbs(
 )hbs";
 
 
+//////////////////////////////////////////////////////////////////////
+// PowerShell Example
+static const char* ps1_string = R"ps1(
+function Add-Numbers ($num1, $num2) {
+    $sum = $num1 + $num2
+    return $sum
+}
+
+)ps1";
+
+
 
 
 //////////////////////////////////////////////////////////////////////

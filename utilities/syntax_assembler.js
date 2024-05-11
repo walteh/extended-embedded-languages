@@ -8,6 +8,7 @@ import { readEmbeddedSpecs } from './embedded_language_specs.js';
 import { buildCppSyntax } from './syntax_templates/cpp_syntax.js';
 import { buildGoSyntax } from './syntax_templates/go_syntax.js';
 import { buildJavascriptSyntax } from './syntax_templates/javascript_syntax.js';
+import { buildPowerShellSyntax } from './syntax_templates/powershell_syntax.js';
 import { buildTypescriptSyntax } from './syntax_templates/typescript_syntax.js';
 import { buildPythonSyntax } from './syntax_templates/python_syntax.js';
 import { buildRustSyntax } from './syntax_templates/rust_syntax.js';
@@ -81,6 +82,15 @@ const HOST_LANGUAGE_SPECS = [
         embedded_scope: 'source.js.embedded.codeblock',
         snippet_start: '/*<ID>*/ `',
         snippet_end: '`',
+    },
+    {
+        file: 'powershell.embedded.json',
+        root_scopes: ['source.powershell'],
+        syntax_builder: buildPowerShellSyntax,
+        vsname: 'powershell',
+        embedded_scope: 'source.powershell.embedded.codeblock',
+        snippet_start: '<#<ID>#> @"',
+        snippet_end: '',
     },
     {
         file: 'typescript.embedded.json',
