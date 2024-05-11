@@ -346,5 +346,17 @@
       "\t$0",
       ""
     ]
+  },
+  "PowerShell code block (string)": {
+    "scope": "powershell",
+    "prefix": [
+      "ps1"
+    ],
+    "description": "Insert a PowerShell code block string",
+    "body": [
+      "<#ps1#> @\"",
+      "\t$0",
+      ""
+    ]
   }
 }

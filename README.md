@@ -1,10 +1,11 @@
 # Extended Embedded Languages
 
 Adds syntax highlighting to C++, Go, Javascript, TypeScript, Python,
-Rust and YAML for strings containing source code. Dozens of languages
-can be used within the strings such as markup languages (HTML, LaTeX),
-query languages (SQL, GraphQL), data languages (JSON, YAML), shader
-languages (GLSL, WSGL), scripts (Shell, Bat) and many more.
+Rust, PowerShell and YAML for strings containing source code. Dozens
+of languages can be used within the strings such as markup languages
+(HTML, LaTeX), query languages (SQL, GraphQL), data languages (JSON,
+YAML), shader languages (GLSL, WSGL), scripts (Shell, Bat) and many
+more.
 
 ![extension_example](images/extension_usage_anim.gif)
 
@@ -66,24 +67,6 @@ code goes here
 `;
 ```
 
-## Host language - Powershell
-
-Powershell uses _here-strings_ to specify the language.
-(e.g. `` `@"...text..."@` ``) but must be multiline.
-A here-string in Powershell looks like
-```powershell
-$s = @"
-...text
-"@
-```
-
-To specify the language, you can use a inline comment before the string:
-```powershell
-$s = <#lang_id#>@"
-code goes here
-"@
-```
-
 Or as a _tagged template_, this style expects there to be a function
 with the name of the language which can process the string (see the
 [tagged template
@@ -141,6 +124,14 @@ strings must be prefixed with an inline comment indicating the
 language ID
 
 ![go_example.png](images/go_example.png)
+
+---
+## Host language - Powershell
+
+In Powershell you can use _here-strings_ for the code blocks.
+(e.g. `` `@"...text..."@` ``, but it can be multi-line). To specify the language, you use a inline comment before the string:
+
+![powershell_example.png](images/powershell_example.png)
 
 ---
 ## Embedded Languages

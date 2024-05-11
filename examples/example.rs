@@ -433,5 +433,16 @@ let hbs_string = /*hbs*/ r#"
 "#;
 
 
+//////////////////////////////////////////////////////////////////////
+// PowerShell Example
+let ps1_string = /*ps1*/ r#"
+function Add-Numbers ($num1, $num2) {
+    $sum = $num1 + $num2
+    return $sum
+}
+
+"#;
+
+
 
 }

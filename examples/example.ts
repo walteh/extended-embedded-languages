@@ -414,3 +414,13 @@ const hbs_string = /*hbs*/ `
 `;
 
 
+// PowerShell Example
+const ps1_string = /*ps1*/ `
+function Add-Numbers (\$num1, \$num2) {
+    \$sum = \$num1 + \$num2
+    return \$sum
+}
+
+`;
+
+
