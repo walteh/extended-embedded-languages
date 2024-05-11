@@ -401,4 +401,14 @@ hbs_string = /*hbs*/ ''
 </ul>
 '';
 
+######################################################################
+# PowerShell Example
+ps1_string = /*ps1*/ ''
+function Add-Numbers ($num1, $num2) {
+    $sum = $num1 + $num2
+    return $sum
+}
+
+'';
+
 in { }

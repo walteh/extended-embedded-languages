@@ -14,7 +14,7 @@
       "patterns": [
         {
           "comment": "Batch-formatted strings",
-          "begin": "\\/\\*(?i:bat)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:bat)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.bat.nix source.batchfile",
           "patterns": [
@@ -29,23 +29,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "C++-formatted strings",
-          "begin": "\\/\\*(?i:cpp|c\\+\\+)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:cpp|c\\+\\+)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.cpp.nix source.cpp",
           "patterns": [
@@ -60,23 +54,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "CSS-formatted strings",
-          "begin": "\\/\\*(?i:css)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:css)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.css.nix source.css",
           "patterns": [
@@ -91,23 +79,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "HTML-formatted strings",
-          "begin": "\\/\\*(?i:html)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:html)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.html.nix text.html.derivative",
           "patterns": [
@@ -122,23 +104,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "INI-formatted strings",
-          "begin": "\\/\\*(?i:ini)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:ini)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.ini.nix source.ini",
           "patterns": [
@@ -153,23 +129,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "Javascript-formatted strings",
-          "begin": "\\/\\*(?i:js|javascript)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:js|javascript)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.javascript.nix source.js",
           "patterns": [
@@ -184,23 +154,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "JSON-formatted strings",
-          "begin": "\\/\\*(?i:json)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:json)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.json.nix source.json",
           "patterns": [
@@ -215,23 +179,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "JSONC-formatted strings",
-          "begin": "\\/\\*(?i:jsonc)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:jsonc)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.jsonc.nix source.json.comments",
           "patterns": [
@@ -246,23 +204,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "Python-formatted strings",
-          "begin": "\\/\\*(?i:py|python)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:py|python)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.python.nix source.python",
           "patterns": [
@@ -277,23 +229,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "Shell-formatted strings",
-          "begin": "\\/\\*(?i:sh|bash|shell|shellscript)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:sh|bash|shell|shellscript)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.shellscript.nix source.shell",
           "patterns": [
@@ -308,23 +254,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "SQL-formatted strings",
-          "begin": "\\/\\*(?i:sql)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:sql)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.sql.nix source.sql",
           "patterns": [
@@ -339,23 +279,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "TOML-formatted strings",
-          "begin": "\\/\\*(?i:toml)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:toml)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.toml.nix source.toml",
           "patterns": [
@@ -370,23 +304,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "XML-formatted strings",
-          "begin": "\\/\\*(?i:xml)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:xml)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.xml.nix text.xml",
           "patterns": [
@@ -401,23 +329,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "YAML-formatted strings",
-          "begin": "\\/\\*(?i:yaml)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:yaml)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.yaml.nix source.yaml",
           "patterns": [
@@ -432,23 +354,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "C-formatted strings",
-          "begin": "\\/\\*(?i:c)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:c)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.c.nix source.c",
           "patterns": [
@@ -463,23 +379,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "HLSL-formatted strings",
-          "begin": "\\/\\*(?i:hlsl)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:hlsl)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.hlsl.nix source.hlsl",
           "patterns": [
@@ -494,23 +404,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "GLSL-formatted strings",
-          "begin": "\\/\\*(?i:glsl)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:glsl)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.glsl.nix source.glsl",
           "patterns": [
@@ -525,23 +429,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "Metal-formatted strings",
-          "begin": "\\/\\*(?i:metal)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:metal)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.metal.nix source.metal",
           "patterns": [
@@ -556,23 +454,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "WGSL-formatted strings",
-          "begin": "\\/\\*(?i:wgsl)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:wgsl)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.wgsl.nix source.wgsl",
           "patterns": [
@@ -587,23 +479,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "Lua-formatted strings",
-          "begin": "\\/\\*(?i:lua)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:lua)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.lua.nix source.lua",
           "patterns": [
@@ -618,23 +504,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "Makefile-formatted strings",
-          "begin": "\\/\\*(?i:make|makefile)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:make|makefile)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.makefile.nix source.makefile",
           "patterns": [
@@ -649,23 +529,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "GraphQL-formatted strings",
-          "begin": "\\/\\*(?i:graphql|gql)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:graphql|gql)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.graphql.nix source.graphql",
           "patterns": [
@@ -680,23 +554,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "TypeScript-formatted strings",
-          "begin": "\\/\\*(?i:typescript|ts)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:typescript|ts)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.typescript.nix source.ts",
           "patterns": [
@@ -711,23 +579,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "LaTeX-formatted strings",
-          "begin": "\\/\\*(?i:latex)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:latex)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.latex.nix text.tex.latex",
           "patterns": [
@@ -742,23 +604,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "TeX-formatted strings",
-          "begin": "\\/\\*(?i:tex)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:tex)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.tex.nix text.tex",
           "patterns": [
@@ -773,23 +629,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "Graphviz-formatted strings",
-          "begin": "\\/\\*(?i:graphviz|dot)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:graphviz|dot)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.dot.nix source.dot",
           "patterns": [
@@ -804,23 +654,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "ARM Assembly-formatted strings",
-          "begin": "\\/\\*(?i:arm)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:arm)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.arm.nix source.arm",
           "patterns": [
@@ -835,23 +679,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "x86 / x64 Assembly-formatted strings",
-          "begin": "\\/\\*(?i:x86|x86_64|x64)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:x86|x86_64|x64)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.asm-intel-x86-generic.nix source.asm.x86_64",
           "patterns": [
@@ -866,23 +704,17 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
-            },
-            "2": {
-              "name": "string.quoted.other.nix"
             }
           }
         },
         {
           "comment": "Handlebars-formatted strings",
-          "begin": "\\/\\*(?i:hbs|handlebars)\\*\\/\\s*(\\'\\')",
+          "begin": "(/\\*(?i:hbs|handlebars)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.handlebars.nix text.html.handlebars",
           "patterns": [
@@ -897,17 +729,36 @@
             },
             "2": {
               "name": "punctuation.definition.string.other.start.nix"
-            },
-            "3": {
-              "name": "string.quoted.other.nix"
             }
           },
           "endCaptures": {
-            "1": {
+            "0": {
               "name": "punctuation.definition.string.other.end.nix"
+            }
+          }
+        },
+        {
+          "comment": "PowerShell-formatted strings",
+          "begin": "(/\\*(?i:ps1|powershell)\\*/)\\s*(\\'\\')",
+          "end": "\\'\\'(?!\\$|\\'|\\\\.)",
+          "contentName": "meta.embedded.block.powershell.nix source.powershell",
+          "patterns": [
+            {
+              "include": "source.powershell"
+            }
+          ],
+          "name": "string.quoted.other.nix",
+          "beginCaptures": {
+            "1": {
+              "name": "comment.block.nix"
             },
             "2": {
-              "name": "string.quoted.other.nix"
+              "name": "punctuation.definition.string.other.start.nix"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.other.end.nix"
             }
           }
         }

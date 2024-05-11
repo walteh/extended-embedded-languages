@@ -144,7 +144,8 @@
           "meta.embedded.block.dot.nix": "dot",
           "meta.embedded.block.arm.nix": "arm",
           "meta.embedded.block.asm-intel-x86-generic.nix": "asm-intel-x86-generic",
-          "meta.embedded.block.handlebars.nix": "handlebars"
+          "meta.embedded.block.handlebars.nix": "handlebars",
+          "meta.embedded.block.powershell.nix": "powershell"
         }
       },
       {

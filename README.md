@@ -1,11 +1,11 @@
 # Extended Embedded Languages
 
 Adds syntax highlighting to C++, Go, Javascript, TypeScript, Python,
-Rust, PowerShell and YAML for strings containing source code. Dozens
-of languages can be used within the strings such as markup languages
-(HTML, LaTeX), query languages (SQL, GraphQL), data languages (JSON,
-YAML), shader languages (GLSL, WSGL), scripts (Shell, Bat) and many
-more.
+Rust, PowerShell, YAML and Nix for strings containing source code.
+Dozens of languages can be used within the strings such as markup
+languages (HTML, LaTeX), query languages (SQL, GraphQL), data
+languages (JSON, YAML), shader languages (GLSL, WSGL), scripts (Shell,
+Bat) and many more.
 
 ![extension_example](images/extension_usage_anim.gif)
 
@@ -128,10 +128,20 @@ language ID
 ---
 ## Host language - Powershell
 
-In Powershell you can use _here-strings_ for the code blocks.
-(e.g. `` `@"...text..."@` ``, but it can be multi-line). To specify the language, you use a inline comment before the string:
+In Powershell you can use _here-strings_ for the code blocks. (e.g. ``
+`@"...text..."@` ``, but it can be multi-line). To specify the
+language, you use a inline comment before the string:
 
 ![powershell_example.png](images/powershell_example.png)
+
+---
+## Host language - Nix
+
+Nix multiline strings are delimited by `''`(e.g. ` ''...text...'' `).
+To specify the language, you use a inline comment before the string:
+
+![nix_example.png](images/nix_example.png)
+
 
 ---
 ## Embedded Languages
@@ -166,6 +176,7 @@ signal which language you are using.
 | Makefile               | makefile, make               | `#make`, `#makefile`, `#!/usr/bin/make`        |
 | Metal shading language | metal                        | `//metal`                                      |
 | Python                 | py, python                   | `#py`                                          |
+| Powershell             | powershell, ps1              | `#powershell`                                  |
 | Shell                  | sh, bash, shell, shellscript | `#sh`, `#bash`, `#shell`, <br>`#!/bin/sh`, ... |
 | SQL                    | sql                          | `--sql`                                        |
 | TeX                    | text                         | `%tex`                                         |
