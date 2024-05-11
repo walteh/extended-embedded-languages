@@ -1,0 +1,24 @@
+######################################################################
+# Documentation Examples:
+let
+s1 = /*json*/ ''
+{"a": "b", "c": [1,2,3]} 
+'';
+    
+s2 = /*sql*/ ''
+    SELECT * FROM USERS 
+    WHERE id = 1234;
+'';
+
+######################################################################
+# Embedded Examples:
+# These are examples of all the embedded languages 
+
+<% snippets.forEach(function(snippet){ %>
+######################################################################
+# <%= snippet.name %> Example
+<%= snippet.ids[0] %>_string = /*<%=snippet.ids[0]%>*/ ''
+<%-snippet.code%>
+'';
+<% }); %>
+in { }

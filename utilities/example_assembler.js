@@ -17,6 +17,7 @@ const hostLanguages = [
     { template: 'cpp.ejs', output: 'example.cpp' },
     { template: 'go.ejs', output: 'example.go',
         escapes: [['`', '`+"`"+`']] },
+    { template: 'nix.ejs', output: 'example.nix' },
     { template: 'python.ejs', output: 'example.py' },
     { template: 'yaml.ejs', output: 'example.yaml' },
     {

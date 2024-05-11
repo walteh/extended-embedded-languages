@@ -110,6 +110,45 @@
         }
       },
       {
+        "scopeName": "source.nix.embedded.codeblock",
+        "injectTo": [
+          "source.nix"
+        ],
+        "path": "syntaxes/nix.embedded.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.bat.nix": "bat",
+          "meta.embedded.block.cpp.nix": "cpp",
+          "meta.embedded.block.css.nix": "css",
+          "meta.embedded.block.html.nix": "html",
+          "meta.embedded.block.ini.nix": "ini",
+          "meta.embedded.block.javascript.nix": "javascript",
+          "meta.embedded.block.json.nix": "json",
+          "meta.embedded.block.jsonc.nix": "jsonc",
+          "meta.embedded.block.python.nix": "python",
+          "meta.embedded.block.shellscript.nix": "shellscript",
+          "meta.embedded.block.sql.nix": "sql",
+          "meta.embedded.block.toml.nix": "toml",
+          "meta.embedded.block.xml.nix": "xml",
+          "meta.embedded.block.yaml.nix": "yaml",
+          "meta.embedded.block.c.nix": "c",
+          "meta.embedded.block.hlsl.nix": "hlsl",
+          "meta.embedded.block.glsl.nix": "glsl",
+          "meta.embedded.block.metal.nix": "metal",
+          "meta.embedded.block.wgsl.nix": "wgsl",
+          "meta.embedded.block.lua.nix": "lua",
+          "meta.embedded.block.makefile.nix": "makefile",
+          "meta.embedded.block.graphql.nix": "graphql",
+          "meta.embedded.block.typescript.nix": "typescript",
+          "meta.embedded.block.latex.nix": "latex",
+          "meta.embedded.block.tex.nix": "tex",
+          "meta.embedded.block.dot.nix": "dot",
+          "meta.embedded.block.arm.nix": "arm",
+          "meta.embedded.block.asm-intel-x86-generic.nix": "asm-intel-x86-generic",
+          "meta.embedded.block.handlebars.nix": "handlebars",
+          "meta.embedded.block.powershell.nix": "powershell"
+        }
+      },
+      {
         "scopeName": "source.python.embedded.codeblock",
         "injectTo": [
           "source.python"

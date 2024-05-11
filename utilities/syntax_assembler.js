@@ -7,6 +7,7 @@ import path from 'path';
 import { readEmbeddedSpecs } from './embedded_language_specs.js';
 import { buildCppSyntax } from './syntax_templates/cpp_syntax.js';
 import { buildGoSyntax } from './syntax_templates/go_syntax.js';
+import { buildNixSyntax } from './syntax_templates/nix_syntax.js';
 import { buildJavascriptSyntax } from './syntax_templates/javascript_syntax.js';
 import { buildPowerShellSyntax } from './syntax_templates/powershell_syntax.js';
 import { buildTypescriptSyntax } from './syntax_templates/typescript_syntax.js';
@@ -54,6 +55,15 @@ const HOST_LANGUAGE_SPECS = [
         vsname: 'go',
         embedded_scope: 'source.go.embedded.codeblock',
         snippet_start: '/*<ID>*/ `',
+        snippet_end: '`',
+    },
+    {
+        file: 'nix.embedded.json',
+        root_scopes: ['source.nix'],
+        syntax_builder: buildNixSyntax,
+        vsname: 'nix',
+        embedded_scope: 'source.nix.embedded.codeblock',
+        snippet_start: '/*<ID>*/ \'\'',
         snippet_end: '`',
     },
     {
