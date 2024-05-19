@@ -1,39 +1,53 @@
-import os, sys
+import foo from 'bar'
 
-# These strings all contain examples of other languages embedded into
-# python. Because python doesn't have custom delimiters for multiline 
-# strings we use a comment at the start of the embedded text to 
-# indicate which language to use
+// These strings all contain example embedded languages using the
+// typescript template string syntax
 
-######################################################################
-## Documentation Examples:
+//////////////////////////////////////////////////////////////////////
+// Documentation Examples:
 
-s = r"""--sql
-SELECT * FROM events WHERE user_id = 1234;
-"""
+// Tagged template identity function
+const sql = (strings, ...values) => String.raw({raw: strings}, ...values);
 
-s = """//cpp
-template<typename T> void run_obj(const T& t) { t.run(); }
-"""
+const s1 = /*sql*/  `
+SELECT user_name FROM users WHERE id = 1234
+   `;
 
-######################################################################
-## Embedded Examples:
+// ` and $ need to be escaped within template strings
+const s2 = /*py*/ `
+print(f" \`hello world', from \${__name__}");
+`;
+
+// Tagged template, requires a sql() function
+const s3 = sql`
+SELECT user_name FROM users WHERE id = 1234
+`;
+
+//////////////////////////////////////////////////////////////////////
+// Embedded Examples:
+
+function Component() {
+    return <div>//md
+  # Markdown example
+  
+  - tomato
+  - orange
+</div>
+  }
 
 
-
-
-# Batch Example
-bat_string = """REM
+// Batch Example
+const bat_string = /*bat*/ `
 REM this is a basic BAT file
 @echo off
 set WORLD="world"
 echo "Hello %WORLD%!"
 
-"""
+`;
 
 
-# C++ Example
-cpp_string = """//cpp
+// C++ Example
+const cpp_string = /*cpp*/ `
 // This is a basic C++ document
 #include <iostream>
 
@@ -44,11 +58,11 @@ int main(int argc, char* argv) {
     return 0;
 }
 
-"""
+`;
 
 
-# CSS Example
-css_string = """/*css*/
+// CSS Example
+const css_string = /*css*/ `
 /* This is basic CSS document */
 body {
     font-family: Arial, sans-serif;
@@ -59,11 +73,11 @@ body {
 h1 {
     color: #0066cc;
 }
-"""
+`;
 
 
-# HTML Example
-html_string = """<html>
+// HTML Example
+const html_string = /*html*/ `
 <!DOCTYPE html>
 <!-- This is a basic HTML document -->
 <html>
@@ -76,11 +90,11 @@ html_string = """<html>
     HTML with syntax highlighting
 </body>
 </html>
-"""
+`;
 
 
-# INI Example
-ini_string = """;ini
+// INI Example
+const ini_string = /*ini*/ `
 ; This is a basic INI file
 [prefs]
 user = example
@@ -89,11 +103,11 @@ theme = dark
 last_file = "example.txt"
 
 
-"""
+`;
 
 
-# Javascript Example
-js_string = """//js
+// Javascript Example
+const js_string = /*js*/ `
 // This is a basic javascript file
 const url = 'http://example.com';
 
@@ -103,12 +117,23 @@ export function printUrl(path) {
 }
 
 
-"""
+`;
 
 
+// JSON Example
+const json_string = /*json*/ `
+{
+    "comment": "This is a basic JSON file",
+    "a": "b",
+    "c": true,
+    "d": [1,2,3, null],
+    "e": 1.02
+}
+`;
 
-# JSONC Example
-jsonc_string = """//jsonc
+
+// JSONC Example
+const jsonc_string = /*jsonc*/ `
 // This is a JSONC (json-with-comments) file
 {
     "a": "b",
@@ -117,11 +142,11 @@ jsonc_string = """//jsonc
     "e": 1.02
 }
 
-"""
+`;
 
 
-# Python Example
-py_string = """#py
+// Python Example
+const py_string = /*py*/ `
 # This is a basic python file
 from os import path
 
@@ -129,25 +154,25 @@ def test():
     if path.exists(__name__):
         print("I'm a real file")
 
-"""
+`;
 
 
-# Shell Example
-sh_string = """#sh
+// Shell Example
+const sh_string = /*sh*/ `
 # This is a basic shell script
 
 print_host() {
-    HOSTNAME=`hostname`
-    if [ -n ${HOSTNAME} ]; then 
-        echo "Hello world from ${HOSTNAME}"
+    HOSTNAME=\`hostname\`
+    if [ -n \${HOSTNAME} ]; then 
+        echo "Hello world from \${HOSTNAME}"
     fi
 }
 
-"""
+`;
 
 
-# SQL Example
-sql_string = """--sql
+// SQL Example
+const sql_string = /*sql*/ `
 -- This is a basic SQL document
 SELECT users.id, orders.product, orders.price
 FROM users
@@ -155,11 +180,11 @@ INNER JOIN orders
   ON users.id = orders.id
 WHERE orders.price > 100 OR orders.product = 'Table'
   
-"""
+`;
 
 
-# TOML Example
-toml_string = """#toml
+// TOML Example
+const toml_string = /*toml*/ `
 # Basic TOML document
 
 url = "http://example.com"
@@ -169,11 +194,11 @@ name = "Sample Document"
 name = "Foobar"
 id = 1234
 active = true
-"""
+`;
 
 
-# XML Example
-xml_string = """<?xml?>
+// XML Example
+const xml_string = /*xml*/ `
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Basic XML document -->
 <user active="true" id="1234">
@@ -183,11 +208,11 @@ xml_string = """<?xml?>
   Unparsed string data
   ]]>
 </user>
-"""
+`;
 
 
-# YAML Example
-yaml_string = """#yaml
+// YAML Example
+const yaml_string = /*yaml*/ `
 # This is a basic YAML document
 users: &id1234
   - foobar: 
@@ -200,11 +225,11 @@ users: &id1234
   description string
 
   
-"""
+`;
 
 
-# C Example
-c_string = """/*c*/
+// C Example
+const c_string = /*c*/ `
 /* Basic C document - with notable differences from C++ */
 int template = 3;
 int static_assert = 4;
@@ -216,11 +241,11 @@ int a, b;
   return a + b;
 }
 
-"""
+`;
 
 
-# HLSL Example
-hlsl_string = """//hlsl
+// HLSL Example
+const hlsl_string = /*hlsl*/ `
 // A simple HLSL shader
 struct VertexInput {
     float3 position : POSITION;
@@ -232,11 +257,11 @@ VertexOutput main(VertexInput input) {
     return output;
 }
 
-"""
+`;
 
 
-# GLSL Example
-glsl_string = """//glsl
+// GLSL Example
+const glsl_string = /*glsl*/ `
 // A simple GLSL shader
 uniform mat4 model_view_proj;
 
@@ -246,11 +271,11 @@ void main() {
     gl_Position = model_view_proj * vec4(position, 1.0);
 }
 
-"""
+`;
 
 
-# Metal Example
-metal_string = """//metal
+// Metal Example
+const metal_string = /*metal*/ `
 // A simple Metal shader
 struct VertexOutput {
     float4 position [[position]];
@@ -264,11 +289,11 @@ vertex VertexOutput vertexShader(const device packed_float3* vertex_buffer [[buf
     output.position = model_view_proj * float4(position, 1.0);
     return output;
 }
-"""
+`;
 
 
-# WGSL Example
-wgsl_string = """//wgsl
+// WGSL Example
+const wgsl_string = /*wgsl*/ `
 // A simple WGSL shader
 struct VertexOutput {
     [[builtin(position)]] position : vec4<f32>;
@@ -281,11 +306,11 @@ fn main(input: VertexInput) -> VertexOutput {
     return output;
 }
 
-"""
+`;
 
 
-# Lua Example
-lua_string = """--lua
+// Lua Example
+const lua_string = /*lua*/ `
 -- This is a basic Lua script
 local number = 3
 if number >= 100:
@@ -293,22 +318,22 @@ if number >= 100:
 else
     print("OK")
     
-"""
+`;
 
 
-# Makefile Example
-make_string = """#makefile
+// Makefile Example
+const make_string = /*make*/ `
 # Makefile example
 *.o : *.c
-    gcc -c $< -o $@
+    gcc -c \$< -o \$@
 
 program: main.o utils.o
-    gcc $< -o program
-"""
+    gcc \$< -o program
+`;
 
 
-# GraphQL Example
-graphql_string = """#graphql
+// GraphQL Example
+const graphql_string = /*graphql*/ `
 # Basic GraphQL query
 query {
   book(id: "123") {
@@ -318,97 +343,97 @@ query {
   }
 }
 
-"""
+`;
 
 
-# TypeScript Example
-typescript_string = """//typescript
+// TypeScript Example
+const typescript_string = /*typescript*/ `
 // Simple TypeScript example
 function addNumbers(a: number, b: number): number {
     return a + b;
 }
 const result = addNumbers(5, 10);
 
-"""
+`;
 
 
-# LaTeX Example
-latex_string = """%latex
+// LaTeX Example
+const latex_string = /*latex*/ `
 % Basic LaTeX document
 \documentclass{article}
 \begin{document}
 Hello, \LaTeX!
 \end{document}
 
-"""
+`;
 
 
-# TeX Example
-tex_string = """%tex
+// TeX Example
+const tex_string = /*tex*/ `
 % Basic TeX document
 \input plain
 
 Hello, \TeX!
 
 \bye
-"""
+`;
 
 
-# Graphviz Example
-graphviz_string = """//graphviz,digraph
+// Graphviz Example
+const graphviz_string = /*graphviz*/ `
 // Graphviz example
 digraph G {
   A -> B -> C -> D;
   B -> D;
 }
 
-"""
+`;
 
 
-# ARM Assembly Example
-arm_string = """@arm
+// ARM Assembly Example
+const arm_string = /*arm*/ `
 @ ARM syntax example
 mov R1, #100
 loop:
   sub R1, #1
   bne loop
 
-"""
+`;
 
 
-# x86 / x64 Assembly Example
-x86_string = """;x86
+// x86 / x64 Assembly Example
+const x86_string = /*x86*/ `
 ; x86 assembly sample
 mov cx, 100
 start:
     dec cx
     jnz start
 
-"""
+`;
 
 
-# Handlebars Example
-hbs_string = """/*hbs*/
+// Handlebars Example
+const hbs_string = /*hbs*/ `
 <ul class="people_list">
   {{#each people}}
     <li>{{this}}</li>
   {{/each}}
 </ul>
-"""
+`;
 
 
-# PowerShell Example
-ps1_string = """#ps1
-function Add-Numbers ($num1, $num2) {
-    $sum = $num1 + $num2
-    return $sum
+// PowerShell Example
+const ps1_string = /*ps1*/ `
+function Add-Numbers (\$num1, \$num2) {
+    \$sum = \$num1 + \$num2
+    return \$sum
 }
 
-"""
+`;
 
 
-# Markdown Example
-md_string = """<!--md-->
+// Markdown Example
+const md_string = /*md*/ `
 # Markdown example
 
 This is a (paragraph)[http://example.com] of text in **bold** and *italic*.
@@ -422,20 +447,6 @@ This is a (paragraph)[http://example.com] of text in **bold** and *italic*.
 > This is a blockquote.
 
 
-"""
+`;
 
-
-######################################################################
-## Test Code:
-
-
-
-######################################################################
-## Regular Python Code:
-## (To make sure nested langauges aren't leaking)
-
-from os import path
-
-if __name__ == "__main__":
-    print("Hello world!");
 

@@ -761,6 +761,31 @@
               "name": "punctuation.definition.string.other.end.nix"
             }
           }
+        },
+        {
+          "comment": "Markdown-formatted strings",
+          "begin": "(/\\*(?i:md|markdown)\\*/)\\s*(\\'\\')",
+          "end": "\\'\\'(?!\\$|\\'|\\\\.)",
+          "contentName": "meta.embedded.block.Markdown.nix text.html.markdown",
+          "patterns": [
+            {
+              "include": "text.html.markdown"
+            }
+          ],
+          "name": "string.quoted.other.nix",
+          "beginCaptures": {
+            "1": {
+              "name": "comment.block.nix"
+            },
+            "2": {
+              "name": "punctuation.definition.string.other.start.nix"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.other.end.nix"
+            }
+          }
         }
       ]
     }

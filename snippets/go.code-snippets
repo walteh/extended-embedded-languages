@@ -358,5 +358,17 @@
       "\t$0",
       "`"
     ]
+  },
+  "Markdown code block (string)": {
+    "scope": "go",
+    "prefix": [
+      "md"
+    ],
+    "description": "Insert a Markdown code block string",
+    "body": [
+      "/*md*/ `",
+      "\t$0",
+      "`"
+    ]
   }
 }

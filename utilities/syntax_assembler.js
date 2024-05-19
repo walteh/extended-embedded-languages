@@ -8,9 +8,8 @@ import { readEmbeddedSpecs } from './embedded_language_specs.js';
 import { buildCppSyntax } from './syntax_templates/cpp_syntax.js';
 import { buildGoSyntax } from './syntax_templates/go_syntax.js';
 import { buildNixSyntax } from './syntax_templates/nix_syntax.js';
-import { buildJavascriptSyntax } from './syntax_templates/javascript_syntax.js';
 import { buildPowerShellSyntax } from './syntax_templates/powershell_syntax.js';
-import { buildTypescriptSyntax } from './syntax_templates/typescript_syntax.js';
+import { buildTypescriptFamilySyntax } from './syntax_templates/typescript_family_syntax.js';
 import { buildPythonSyntax } from './syntax_templates/python_syntax.js';
 import { buildRustSyntax } from './syntax_templates/rust_syntax.js';
 import { buildYamlSyntax } from './syntax_templates/yaml_syntax.js';
@@ -87,9 +86,18 @@ const HOST_LANGUAGE_SPECS = [
     {
         file: 'javascript.embedded.json',
         root_scopes: ['source.js'],
-        syntax_builder: buildJavascriptSyntax,
+        syntax_builder: buildTypescriptFamilySyntax,
         vsname: 'javascript',
         embedded_scope: 'source.js.embedded.codeblock',
+        snippet_start: '/*<ID>*/ `',
+        snippet_end: '`',
+    },
+    {
+        file: 'javascriptreact.embedded.json',
+        root_scopes: ['source.js.jsx'],
+        syntax_builder: buildTypescriptFamilySyntax,
+        vsname: 'javascriptreact',
+        embedded_scope: 'source.js.jsx.embedded.codeblock',
         snippet_start: '/*<ID>*/ `',
         snippet_end: '`',
     },
@@ -105,9 +113,18 @@ const HOST_LANGUAGE_SPECS = [
     {
         file: 'typescript.embedded.json',
         root_scopes: ['source.ts'],
-        syntax_builder: buildTypescriptSyntax,
+        syntax_builder: buildTypescriptFamilySyntax,
         vsname: 'typescript',
         embedded_scope: 'source.ts.embedded.codeblock',
+        snippet_start: '/*<ID>*/ `',
+        snippet_end: '`',
+    },
+    {
+        file: 'typescriptreact.embedded.json',
+        root_scopes: ['source.tsx'],
+        syntax_builder: buildTypescriptFamilySyntax,
+        vsname: 'typescriptreact',
+        embedded_scope: 'source.tsx.embedded.codeblock',
         snippet_start: '/*<ID>*/ `',
         snippet_end: '`',
     },

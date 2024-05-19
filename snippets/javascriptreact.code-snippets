@@ -1,6 +1,6 @@
 {
   "Batch code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "bat"
     ],
@@ -12,7 +12,7 @@
     ]
   },
   "C++ code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "cpp"
     ],
@@ -24,7 +24,7 @@
     ]
   },
   "CSS code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "css"
     ],
@@ -36,7 +36,7 @@
     ]
   },
   "HTML code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "html"
     ],
@@ -48,7 +48,7 @@
     ]
   },
   "INI code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "ini"
     ],
@@ -60,7 +60,7 @@
     ]
   },
   "Javascript code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "js"
     ],
@@ -72,7 +72,7 @@
     ]
   },
   "JSON code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "json"
     ],
@@ -84,7 +84,7 @@
     ]
   },
   "JSONC code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "jsonc"
     ],
@@ -96,7 +96,7 @@
     ]
   },
   "Python code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "py"
     ],
@@ -108,7 +108,7 @@
     ]
   },
   "Shell code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "sh"
     ],
@@ -120,7 +120,7 @@
     ]
   },
   "SQL code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "sql"
     ],
@@ -132,7 +132,7 @@
     ]
   },
   "TOML code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "toml"
     ],
@@ -144,7 +144,7 @@
     ]
   },
   "XML code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "xml"
     ],
@@ -156,7 +156,7 @@
     ]
   },
   "YAML code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "yaml"
     ],
@@ -168,7 +168,7 @@
     ]
   },
   "C code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "c"
     ],
@@ -180,7 +180,7 @@
     ]
   },
   "HLSL code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "hlsl"
     ],
@@ -192,7 +192,7 @@
     ]
   },
   "GLSL code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "glsl"
     ],
@@ -204,7 +204,7 @@
     ]
   },
   "Metal code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "metal"
     ],
@@ -216,7 +216,7 @@
     ]
   },
   "WGSL code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "wgsl"
     ],
@@ -228,7 +228,7 @@
     ]
   },
   "Lua code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "lua"
     ],
@@ -240,7 +240,7 @@
     ]
   },
   "Makefile code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "make"
     ],
@@ -252,7 +252,7 @@
     ]
   },
   "GraphQL code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "graphql"
     ],
@@ -264,7 +264,7 @@
     ]
   },
   "TypeScript code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "typescript"
     ],
@@ -276,7 +276,7 @@
     ]
   },
   "LaTeX code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "latex"
     ],
@@ -288,7 +288,7 @@
     ]
   },
   "TeX code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "tex"
     ],
@@ -300,7 +300,7 @@
     ]
   },
   "Graphviz code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "graphviz"
     ],
@@ -312,7 +312,7 @@
     ]
   },
   "ARM Assembly code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "arm"
     ],
@@ -324,7 +324,7 @@
     ]
   },
   "x86 / x64 Assembly code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "x86"
     ],
@@ -336,7 +336,7 @@
     ]
   },
   "Handlebars code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "hbs"
     ],
@@ -348,7 +348,7 @@
     ]
   },
   "PowerShell code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "ps1"
     ],
@@ -360,7 +360,7 @@
     ]
   },
   "Markdown code block (string)": {
-    "scope": "typescript",
+    "scope": "javascriptreact",
     "prefix": [
       "md"
     ],

@@ -358,5 +358,17 @@
       "\t$0",
       "\"#"
     ]
+  },
+  "Markdown code block (string)": {
+    "scope": "rust",
+    "prefix": [
+      "md"
+    ],
+    "description": "Insert a Markdown code block string",
+    "body": [
+      "/*md*/ r#\"",
+      "\t$0",
+      "\"#"
+    ]
   }
 }

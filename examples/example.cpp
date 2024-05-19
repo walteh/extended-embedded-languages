@@ -452,6 +452,25 @@ function Add-Numbers ($num1, $num2) {
 )ps1";
 
 
+//////////////////////////////////////////////////////////////////////
+// Markdown Example
+static const char* md_string = R"md(
+# Markdown example
+
+This is a (paragraph)[http://example.com] of text in **bold** and *italic*.
+
+## Heading 2
+
+- Item 1
+- Item 2
+- Item 3
+
+> This is a blockquote.
+
+
+)md";
+
+
 
 
 //////////////////////////////////////////////////////////////////////

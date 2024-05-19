@@ -67,7 +67,8 @@
           "meta.embedded.block.arm.cpp": "arm",
           "meta.embedded.block.asm-intel-x86-generic.cpp": "asm-intel-x86-generic",
           "meta.embedded.block.handlebars.cpp": "handlebars",
-          "meta.embedded.block.powershell.cpp": "powershell"
+          "meta.embedded.block.powershell.cpp": "powershell",
+          "meta.embedded.block.Markdown.cpp": "Markdown"
         }
       },
       {
@@ -106,7 +107,8 @@
           "meta.embedded.block.arm.go": "arm",
           "meta.embedded.block.asm-intel-x86-generic.go": "asm-intel-x86-generic",
           "meta.embedded.block.handlebars.go": "handlebars",
-          "meta.embedded.block.powershell.go": "powershell"
+          "meta.embedded.block.powershell.go": "powershell",
+          "meta.embedded.block.Markdown.go": "Markdown"
         }
       },
       {
@@ -145,7 +147,8 @@
           "meta.embedded.block.arm.nix": "arm",
           "meta.embedded.block.asm-intel-x86-generic.nix": "asm-intel-x86-generic",
           "meta.embedded.block.handlebars.nix": "handlebars",
-          "meta.embedded.block.powershell.nix": "powershell"
+          "meta.embedded.block.powershell.nix": "powershell",
+          "meta.embedded.block.Markdown.nix": "Markdown"
         }
       },
       {
@@ -184,7 +187,8 @@
           "meta.embedded.block.arm.python": "arm",
           "meta.embedded.block.asm-intel-x86-generic.python": "asm-intel-x86-generic",
           "meta.embedded.block.handlebars.python": "handlebars",
-          "meta.embedded.block.powershell.python": "powershell"
+          "meta.embedded.block.powershell.python": "powershell",
+          "meta.embedded.block.Markdown.python": "Markdown"
         }
       },
       {
@@ -224,7 +228,8 @@
           "meta.embedded.block.arm.yaml": "arm",
           "meta.embedded.block.asm-intel-x86-generic.yaml": "asm-intel-x86-generic",
           "meta.embedded.block.handlebars.yaml": "handlebars",
-          "meta.embedded.block.powershell.yaml": "powershell"
+          "meta.embedded.block.powershell.yaml": "powershell",
+          "meta.embedded.block.Markdown.yaml": "Markdown"
         }
       },
       {
@@ -263,7 +268,48 @@
           "meta.embedded.block.arm.javascript": "arm",
           "meta.embedded.block.asm-intel-x86-generic.javascript": "asm-intel-x86-generic",
           "meta.embedded.block.handlebars.javascript": "handlebars",
-          "meta.embedded.block.powershell.javascript": "powershell"
+          "meta.embedded.block.powershell.javascript": "powershell",
+          "meta.embedded.block.Markdown.javascript": "Markdown"
+        }
+      },
+      {
+        "scopeName": "source.js.jsx.embedded.codeblock",
+        "injectTo": [
+          "source.js.jsx"
+        ],
+        "path": "syntaxes/javascriptreact.embedded.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.bat.javascriptreact": "bat",
+          "meta.embedded.block.cpp.javascriptreact": "cpp",
+          "meta.embedded.block.css.javascriptreact": "css",
+          "meta.embedded.block.html.javascriptreact": "html",
+          "meta.embedded.block.ini.javascriptreact": "ini",
+          "meta.embedded.block.javascript.javascriptreact": "javascript",
+          "meta.embedded.block.json.javascriptreact": "json",
+          "meta.embedded.block.jsonc.javascriptreact": "jsonc",
+          "meta.embedded.block.python.javascriptreact": "python",
+          "meta.embedded.block.shellscript.javascriptreact": "shellscript",
+          "meta.embedded.block.sql.javascriptreact": "sql",
+          "meta.embedded.block.toml.javascriptreact": "toml",
+          "meta.embedded.block.xml.javascriptreact": "xml",
+          "meta.embedded.block.yaml.javascriptreact": "yaml",
+          "meta.embedded.block.c.javascriptreact": "c",
+          "meta.embedded.block.hlsl.javascriptreact": "hlsl",
+          "meta.embedded.block.glsl.javascriptreact": "glsl",
+          "meta.embedded.block.metal.javascriptreact": "metal",
+          "meta.embedded.block.wgsl.javascriptreact": "wgsl",
+          "meta.embedded.block.lua.javascriptreact": "lua",
+          "meta.embedded.block.makefile.javascriptreact": "makefile",
+          "meta.embedded.block.graphql.javascriptreact": "graphql",
+          "meta.embedded.block.typescript.javascriptreact": "typescript",
+          "meta.embedded.block.latex.javascriptreact": "latex",
+          "meta.embedded.block.tex.javascriptreact": "tex",
+          "meta.embedded.block.dot.javascriptreact": "dot",
+          "meta.embedded.block.arm.javascriptreact": "arm",
+          "meta.embedded.block.asm-intel-x86-generic.javascriptreact": "asm-intel-x86-generic",
+          "meta.embedded.block.handlebars.javascriptreact": "handlebars",
+          "meta.embedded.block.powershell.javascriptreact": "powershell",
+          "meta.embedded.block.Markdown.javascriptreact": "Markdown"
         }
       },
       {
@@ -302,7 +348,8 @@
           "meta.embedded.block.arm.powershell": "arm",
           "meta.embedded.block.asm-intel-x86-generic.powershell": "asm-intel-x86-generic",
           "meta.embedded.block.handlebars.powershell": "handlebars",
-          "meta.embedded.block.powershell.powershell": "powershell"
+          "meta.embedded.block.powershell.powershell": "powershell",
+          "meta.embedded.block.Markdown.powershell": "Markdown"
         }
       },
       {
@@ -341,7 +388,48 @@
           "meta.embedded.block.arm.typescript": "arm",
           "meta.embedded.block.asm-intel-x86-generic.typescript": "asm-intel-x86-generic",
           "meta.embedded.block.handlebars.typescript": "handlebars",
-          "meta.embedded.block.powershell.typescript": "powershell"
+          "meta.embedded.block.powershell.typescript": "powershell",
+          "meta.embedded.block.Markdown.typescript": "Markdown"
+        }
+      },
+      {
+        "scopeName": "source.tsx.embedded.codeblock",
+        "injectTo": [
+          "source.tsx"
+        ],
+        "path": "syntaxes/typescriptreact.embedded.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.bat.typescriptreact": "bat",
+          "meta.embedded.block.cpp.typescriptreact": "cpp",
+          "meta.embedded.block.css.typescriptreact": "css",
+          "meta.embedded.block.html.typescriptreact": "html",
+          "meta.embedded.block.ini.typescriptreact": "ini",
+          "meta.embedded.block.javascript.typescriptreact": "javascript",
+          "meta.embedded.block.json.typescriptreact": "json",
+          "meta.embedded.block.jsonc.typescriptreact": "jsonc",
+          "meta.embedded.block.python.typescriptreact": "python",
+          "meta.embedded.block.shellscript.typescriptreact": "shellscript",
+          "meta.embedded.block.sql.typescriptreact": "sql",
+          "meta.embedded.block.toml.typescriptreact": "toml",
+          "meta.embedded.block.xml.typescriptreact": "xml",
+          "meta.embedded.block.yaml.typescriptreact": "yaml",
+          "meta.embedded.block.c.typescriptreact": "c",
+          "meta.embedded.block.hlsl.typescriptreact": "hlsl",
+          "meta.embedded.block.glsl.typescriptreact": "glsl",
+          "meta.embedded.block.metal.typescriptreact": "metal",
+          "meta.embedded.block.wgsl.typescriptreact": "wgsl",
+          "meta.embedded.block.lua.typescriptreact": "lua",
+          "meta.embedded.block.makefile.typescriptreact": "makefile",
+          "meta.embedded.block.graphql.typescriptreact": "graphql",
+          "meta.embedded.block.typescript.typescriptreact": "typescript",
+          "meta.embedded.block.latex.typescriptreact": "latex",
+          "meta.embedded.block.tex.typescriptreact": "tex",
+          "meta.embedded.block.dot.typescriptreact": "dot",
+          "meta.embedded.block.arm.typescriptreact": "arm",
+          "meta.embedded.block.asm-intel-x86-generic.typescriptreact": "asm-intel-x86-generic",
+          "meta.embedded.block.handlebars.typescriptreact": "handlebars",
+          "meta.embedded.block.powershell.typescriptreact": "powershell",
+          "meta.embedded.block.Markdown.typescriptreact": "Markdown"
         }
       },
       {
@@ -380,7 +468,8 @@
           "meta.embedded.block.arm.rust": "arm",
           "meta.embedded.block.asm-intel-x86-generic.rust": "asm-intel-x86-generic",
           "meta.embedded.block.handlebars.rust": "handlebars",
-          "meta.embedded.block.powershell.rust": "powershell"
+          "meta.embedded.block.powershell.rust": "powershell",
+          "meta.embedded.block.Markdown.rust": "Markdown"
         }
       }
     ],

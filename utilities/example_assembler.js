@@ -21,15 +21,23 @@ const hostLanguages = [
     { template: 'python.ejs', output: 'example.py' },
     { template: 'yaml.ejs', output: 'example.yaml' },
     {
-        template: 'javascript.ejs', output: 'example.js',
-        escapes: [['`', '\\`'], ['$', '\\$']],
-    },
-    {
         template: 'powershell.ejs', output: 'example.ps1',
         escapes: [],
     },
     {
+        template: 'typescript.ejs', output: 'example.js',
+        escapes: [['`', '\\`'], ['$', '\\$']],
+    },
+    {
+        template: 'typescript.ejs', output: 'example.jsx',
+        escapes: [['`', '\\`'], ['$', '\\$']],
+    },
+    {
         template: 'typescript.ejs', output: 'example.ts',
+        escapes: [['`', '\\`'], ['$', '\\$']],
+    },
+    {
+        template: 'typescript.ejs', output: 'example.tsx',
         escapes: [['`', '\\`'], ['$', '\\$']],
     },
     { template: 'rust.ejs', output: 'example.rs' },

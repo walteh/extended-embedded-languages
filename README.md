@@ -53,7 +53,7 @@ the string as well:
 ![cpp_example.png](images/cpp_example.png)
 
 ---
-## Host language - Javascript and TypeScript
+## Host language - Javascript, TypeScript, JSX and TSX
 
 Javascript and TypeScript template strings delimited by backticks
 (e.g. `` `...text...` ``) can be multiline. This extension supports
@@ -174,6 +174,7 @@ signal which language you are using.
 | LaTeX                  | latex                        | `%latex`                                       |
 | Lua                    | lua                          | `--lua`                                        |
 | Makefile               | makefile, make               | `#make`, `#makefile`, `#!/usr/bin/make`        |
+| Markdown               | markdown, md                 | `<!--md`                                       |
 | Metal shading language | metal                        | `//metal`                                      |
 | Python                 | py, python                   | `#py`                                          |
 | Powershell             | powershell, ps1              | `#powershell`                                  |

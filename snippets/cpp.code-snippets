@@ -358,5 +358,17 @@
       "\t$0",
       ")ps1\""
     ]
+  },
+  "Markdown code block (string)": {
+    "scope": "cpp",
+    "prefix": [
+      "md"
+    ],
+    "description": "Insert a Markdown code block string",
+    "body": [
+      "R\"md(",
+      "\t$0",
+      ")md\""
+    ]
   }
 }
