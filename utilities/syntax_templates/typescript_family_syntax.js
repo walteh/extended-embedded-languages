@@ -82,8 +82,12 @@ export function buildTypescriptFamilySyntax(hostSpec, embeddedSpecs) {
                 '0': { 'name': `string.template.${suffix} punctuation.definition.string.template.end.${suffix}` },
             },
             'patterns': [
-                { 'include': '#template-substitution-element' },
-                { 'include': '#string-character-escape' },
+                // TODO: Can we include something here to make javascript
+                // tempalte substitutions get highlighted in javascript?
+                // For example the string in ${} should be JS highlighted:
+                //    const py_string = /*py*/ `
+                //    print("Hello ${(await fetch('http://example.com')).body.json();}")
+                //    `;
                 { 'include': `${lang.root_scope}` },
             ],
         };

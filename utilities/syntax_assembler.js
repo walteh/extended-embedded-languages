@@ -39,7 +39,7 @@ const SYNTAX_DIR = 'syntaxes';
  */
 const HOST_LANGUAGE_SPECS = [
     {
-        file: 'cpp.embedded.json',
+        file: 'cpp.embedded.tmLanguage.json',
         root_scopes: ['source.cpp'],
         syntax_builder: buildCppSyntax,
         vsname: 'cpp',
@@ -48,7 +48,7 @@ const HOST_LANGUAGE_SPECS = [
         snippet_end: ')<ID>"',
     },
     {
-        file: 'go.embedded.json',
+        file: 'go.embedded.tmLanguage.json',
         root_scopes: ['source.go'],
         syntax_builder: buildGoSyntax,
         vsname: 'go',
@@ -57,7 +57,7 @@ const HOST_LANGUAGE_SPECS = [
         snippet_end: '`',
     },
     {
-        file: 'nix.embedded.json',
+        file: 'nix.embedded.tmLanguage.json',
         root_scopes: ['source.nix'],
         syntax_builder: buildNixSyntax,
         vsname: 'nix',
@@ -66,7 +66,7 @@ const HOST_LANGUAGE_SPECS = [
         snippet_end: '`',
     },
     {
-        file: 'python.embedded.json',
+        file: 'python.embedded.tmLanguage.json',
         root_scopes: ['source.python'],
         syntax_builder: buildPythonSyntax,
         vsname: 'python',
@@ -75,7 +75,7 @@ const HOST_LANGUAGE_SPECS = [
         snippet_end: '"""',
     },
     {
-        file: 'yaml.embedded.json',
+        file: 'yaml.embedded.tmLanguage.json',
         root_scopes: ['source.yaml', 'text.yaml.jinja'],
         syntax_builder: buildYamlSyntax,
         vsname: 'yaml',
@@ -84,7 +84,7 @@ const HOST_LANGUAGE_SPECS = [
         snippet_end: '',
     },
     {
-        file: 'javascript.embedded.json',
+        file: 'javascript.embedded.tmLanguage.json',
         root_scopes: ['source.js'],
         syntax_builder: buildTypescriptFamilySyntax,
         vsname: 'javascript',
@@ -102,7 +102,7 @@ const HOST_LANGUAGE_SPECS = [
         snippet_end: '`',
     },
     {
-        file: 'powershell.embedded.json',
+        file: 'powershell.embedded.tmLanguage.json',
         root_scopes: ['source.powershell'],
         syntax_builder: buildPowerShellSyntax,
         vsname: 'powershell',
@@ -111,7 +111,7 @@ const HOST_LANGUAGE_SPECS = [
         snippet_end: '',
     },
     {
-        file: 'typescript.embedded.json',
+        file: 'typescript.embedded.tmLanguage.json',
         root_scopes: ['source.ts'],
         syntax_builder: buildTypescriptFamilySyntax,
         vsname: 'typescript',
@@ -129,7 +129,7 @@ const HOST_LANGUAGE_SPECS = [
         snippet_end: '`',
     },
     {
-        file: 'rust.embedded.json',
+        file: 'rust.embedded.tmLanguage.json',
         root_scopes: ['source.rust'],
         syntax_builder: buildRustSyntax,
         vsname: 'rust',

@@ -36,7 +36,7 @@
         "injectTo": [
           "source.cpp"
         ],
-        "path": "syntaxes/cpp.embedded.json",
+        "path": "syntaxes/cpp.embedded.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.bat.cpp": "bat",
           "meta.embedded.block.cpp.cpp": "cpp",
@@ -76,7 +76,7 @@
         "injectTo": [
           "source.go"
         ],
-        "path": "syntaxes/go.embedded.json",
+        "path": "syntaxes/go.embedded.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.bat.go": "bat",
           "meta.embedded.block.cpp.go": "cpp",
@@ -116,7 +116,7 @@
         "injectTo": [
           "source.nix"
         ],
-        "path": "syntaxes/nix.embedded.json",
+        "path": "syntaxes/nix.embedded.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.bat.nix": "bat",
           "meta.embedded.block.cpp.nix": "cpp",
@@ -156,7 +156,7 @@
         "injectTo": [
           "source.python"
         ],
-        "path": "syntaxes/python.embedded.json",
+        "path": "syntaxes/python.embedded.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.bat.python": "bat",
           "meta.embedded.block.cpp.python": "cpp",
@@ -197,7 +197,7 @@
           "source.yaml",
           "text.yaml.jinja"
         ],
-        "path": "syntaxes/yaml.embedded.json",
+        "path": "syntaxes/yaml.embedded.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.bat.yaml": "bat",
           "meta.embedded.block.cpp.yaml": "cpp",
@@ -237,7 +237,7 @@
         "injectTo": [
           "source.js"
         ],
-        "path": "syntaxes/javascript.embedded.json",
+        "path": "syntaxes/javascript.embedded.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.bat.javascript": "bat",
           "meta.embedded.block.cpp.javascript": "cpp",
@@ -317,7 +317,7 @@
         "injectTo": [
           "source.powershell"
         ],
-        "path": "syntaxes/powershell.embedded.json",
+        "path": "syntaxes/powershell.embedded.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.bat.powershell": "bat",
           "meta.embedded.block.cpp.powershell": "cpp",
@@ -357,7 +357,7 @@
         "injectTo": [
           "source.ts"
         ],
-        "path": "syntaxes/typescript.embedded.json",
+        "path": "syntaxes/typescript.embedded.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.bat.typescript": "bat",
           "meta.embedded.block.cpp.typescript": "cpp",
@@ -437,7 +437,7 @@
         "injectTo": [
           "source.rust"
         ],
-        "path": "syntaxes/rust.embedded.json",
+        "path": "syntaxes/rust.embedded.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.bat.rust": "bat",
           "meta.embedded.block.cpp.rust": "cpp",
