@@ -1,7 +1,7 @@
 import foo from 'bar'
 
 // These strings all contain example embedded languages using the
-// typescript template string syntax
+// javascript/typescript template string syntax
 
 //////////////////////////////////////////////////////////////////////
 // Documentation Examples:

@@ -1,7 +1,7 @@
 import foo from 'bar'
 
 // These strings all contain example embedded languages using the
-// typescript template string syntax
+// javascript/typescript template string syntax
 
 //////////////////////////////////////////////////////////////////////
 // Documentation Examples:
@@ -11,7 +11,7 @@ const sql = (strings, ...values) => String.raw({raw: strings}, ...values);
 
 const s1 = /*sql*/  `
 SELECT user_name FROM users WHERE id = 1234
-   `;
+`;
 
 // ` and $ need to be escaped within template strings
 const s2 = /*py*/ `
@@ -26,14 +26,6 @@ SELECT user_name FROM users WHERE id = 1234
 //////////////////////////////////////////////////////////////////////
 // Embedded Examples:
 
-function Component() {
-    return <div>//md
-  # Markdown example
-  
-  - tomato
-  - orange
-</div>
-  }
 
 
 // Batch Example

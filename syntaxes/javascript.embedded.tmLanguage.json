@@ -1907,12 +1907,6 @@
           },
           "patterns": [
             {
-              "include": "#template-substitution-element"
-            },
-            {
-              "include": "#string-character-escape"
-            },
-            {
               "include": "text.html.markdown"
             }
           ]
