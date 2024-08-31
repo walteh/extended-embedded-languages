@@ -84,6 +84,15 @@ const HOST_LANGUAGE_SPECS = [
         snippet_end: '',
     },
     {
+        file: 'github-actions-workflow.embedded.tmLanguage.json',
+        root_scopes: ['source.github-actions-workflow'],
+        syntax_builder: buildYamlSyntax,
+        vsname: 'github-actions-workflow',
+        embedded_scope: 'source.yaml.embedded.codeblock',
+        snippet_start: '| #<ID>',
+        snippet_end: '',
+    },
+    {
         file: 'javascript.embedded.tmLanguage.json',
         root_scopes: ['source.js'],
         syntax_builder: buildTypescriptFamilySyntax,
