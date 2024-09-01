@@ -1,0 +1,59 @@
+# These strings all contain examples of other languages embedded into
+# toml. Because toml doesn't have custom delimiters for multiline 
+# strings we use a comment at the start of the embedded text to 
+# indicate which language to use
+
+######################################################################
+## Documentation Examples:
+
+sqlScript = """--sql
+SELECT * FROM events WHERE user_id = 1234;
+"""
+
+cppScript = """//cpp
+template<typename T> void run_obj(const T& t) { t.run(); }
+"""
+
+######################################################################
+## Embedded Examples:
+
+
+<% snippets.forEach(function(snippet) { %>
+<% if (snippet.example_comment) { %>
+# <%= snippet.name %> Example
+<%= snippet.ids[0] %>_string = '''<%-snippet.example_comment%>
+<%-snippet.code%>
+'''
+<% } }); %>
+
+######################################################################
+## Test Code:
+
+
+
+######################################################################
+## Regular Toml Code:
+## (To make sure nested langauges aren't leaking)
+
+title = "TOML Example"
+
+[owner]
+name = "Tom Preston-Werner"
+dob = 1979-05-27T07:32:00-08:00
+
+[database]
+enabled = true
+ports = [ 8000, 8001, 8002 ]
+data = [ ["delta", "phi"], [3.14] ]
+temp_targets = { cpu = 79.5, case = 72.0 }
+
+[servers]
+
+[servers.alpha]
+ip = "10.0.0.1"
+role = "frontend"
+
+[servers.beta]
+ip = "10.0.0.2"
+role = "backend"
+

@@ -41,6 +41,7 @@ const hostLanguages = [
         escapes: [['`', '\\`'], ['$', '\\$']],
     },
     { template: 'rust.ejs', output: 'example.rs' },
+    { template: 'toml.ejs', output: 'example.toml' },
 ];
 
 /**

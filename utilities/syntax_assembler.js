@@ -13,6 +13,7 @@ import { buildTypescriptFamilySyntax } from './syntax_templates/typescript_famil
 import { buildPythonSyntax } from './syntax_templates/python_syntax.js';
 import { buildRustSyntax } from './syntax_templates/rust_syntax.js';
 import { buildYamlSyntax } from './syntax_templates/yaml_syntax.js';
+import { buildTomlSyntax } from './syntax_templates/toml_syntax.js';
 
 const PACKAGE_JSON_PATH = path.join('..', 'package.json');
 // These dirs are relative to the PACKAGE_JSON_PATH
@@ -145,6 +146,15 @@ const HOST_LANGUAGE_SPECS = [
         embedded_scope: 'source.rust.embedded.codeblock',
         snippet_start: '/*<ID>*/ r#"',
         snippet_end: '"#',
+    },
+    {
+        file: 'toml.embedded.json',
+        root_scopes: ['source.toml'],
+        syntax_builder: buildTomlSyntax,
+        vsname: 'toml',
+        embedded_scope: 'source.toml.embedded.codeblock',
+        snippet_start: '\'\'\'<COMMENT>',
+        snippet_end: '\'\'\'',
     },
 ];
 

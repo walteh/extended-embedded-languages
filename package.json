@@ -511,6 +511,46 @@
           "meta.embedded.block.powershell.rust": "powershell",
           "meta.embedded.block.Markdown.rust": "Markdown"
         }
+      },
+      {
+        "scopeName": "source.toml.embedded.codeblock",
+        "injectTo": [
+          "source.toml"
+        ],
+        "path": "syntaxes/toml.embedded.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.bat.toml": "bat",
+          "meta.embedded.block.cpp.toml": "cpp",
+          "meta.embedded.block.css.toml": "css",
+          "meta.embedded.block.html.toml": "html",
+          "meta.embedded.block.ini.toml": "ini",
+          "meta.embedded.block.javascript.toml": "javascript",
+          "meta.embedded.block.json.toml": "json",
+          "meta.embedded.block.jsonc.toml": "jsonc",
+          "meta.embedded.block.python.toml": "python",
+          "meta.embedded.block.shellscript.toml": "shellscript",
+          "meta.embedded.block.sql.toml": "sql",
+          "meta.embedded.block.toml.toml": "toml",
+          "meta.embedded.block.xml.toml": "xml",
+          "meta.embedded.block.yaml.toml": "yaml",
+          "meta.embedded.block.c.toml": "c",
+          "meta.embedded.block.hlsl.toml": "hlsl",
+          "meta.embedded.block.glsl.toml": "glsl",
+          "meta.embedded.block.metal.toml": "metal",
+          "meta.embedded.block.wgsl.toml": "wgsl",
+          "meta.embedded.block.lua.toml": "lua",
+          "meta.embedded.block.makefile.toml": "makefile",
+          "meta.embedded.block.graphql.toml": "graphql",
+          "meta.embedded.block.typescript.toml": "typescript",
+          "meta.embedded.block.latex.toml": "latex",
+          "meta.embedded.block.tex.toml": "tex",
+          "meta.embedded.block.dot.toml": "dot",
+          "meta.embedded.block.arm.toml": "arm",
+          "meta.embedded.block.asm-intel-x86-generic.toml": "asm-intel-x86-generic",
+          "meta.embedded.block.handlebars.toml": "handlebars",
+          "meta.embedded.block.powershell.toml": "powershell",
+          "meta.embedded.block.Markdown.toml": "Markdown"
+        }
       }
     ],
     "snippets": []

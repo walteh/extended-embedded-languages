@@ -1,7 +1,7 @@
 # Extended Embedded Languages
 
 Adds syntax highlighting to C++, Go, Javascript, TypeScript, Python,
-Rust, PowerShell, YAML and Nix for strings containing source code.
+Rust, PowerShell, YAML, TOML and Nix for strings containing source code.
 Dozens of languages can be used within the strings such as markup
 languages (HTML, LaTeX), query languages (SQL, GraphQL), data
 languages (JSON, YAML), shader languages (GLSL, WSGL), scripts (Shell,
@@ -142,6 +142,19 @@ To specify the language, you use a inline comment before the string:
 
 ![nix_example.png](images/nix_example.png)
 
+---
+## Host language - Toml
+
+Toml multiline strings do not have custom terminators the way C++,
+Perl or other languages do. As such, we rely on _leading comments_ to
+identify a language. This comment must be immediately after the `'''`
+or `"""` which starts a multiline string
+
+![toml_example.png](images/toml_example.png)
+
+This extension has only been tested in combination with the [Even Better
+TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)
+extension's TOML language definition.
 
 ---
 ## Embedded Languages
@@ -220,4 +233,3 @@ discussion on what is going on.
 ## Release Notes
 
 See CHANGELOG.md for full list of changes
-
