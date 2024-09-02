@@ -148,7 +148,7 @@ To specify the language, you use a inline comment before the string:
 Toml multiline strings do not have custom terminators the way C++,
 Perl or other languages do. As such, we rely on _leading comments_ to
 identify a language. This comment must be immediately after the `'''`
-or `"""` which starts a multiline string
+which starts a literal multiline string
 
 ![toml_example.png](images/toml_example.png)
 

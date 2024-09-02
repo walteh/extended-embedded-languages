@@ -6,13 +6,13 @@
 ######################################################################
 ## Documentation Examples:
 
-sqlScript = """--sql
+sqlScript = '''--sql
 SELECT * FROM events WHERE user_id = 1234;
-"""
+'''
 
-cppScript = """//cpp
+cppScript = '''//cpp
 template<typename T> void run_obj(const T& t) { t.run(); }
-"""
+'''
 
 ######################################################################
 ## Embedded Examples:

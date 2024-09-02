@@ -14,8 +14,11 @@ export function buildTomlSyntax(hostSpec, embeddedSpecs) {
         .map((embedded) => ({
             'comment': `${embedded.name}-formatted triple-quoted strings`,
             'name': 'string.quoted.multi.embedded.toml',
+            // Match only multiline literal strings - change the first
+            // capture group to ('''|""") to match multiline basic
+            // strings too
             'begin': String.raw`(?x)
-('''|""")
+(''') 
 (?= (?i:${embedded.comment_choice_re}) \b )`,
             'end': String.raw`(\1)`,
             'contentName': `meta.embedded.block.${embedded.vsname}.${hostSpec.vsname} ${embedded.root_scope}`,
@@ -40,7 +43,7 @@ DO NOT HAND EDIT IT - changes will be lost.`,
         'repository': {
             'triple_quoted_strings': {
                 'comment': 'These patterns all match toml triple-quoted strings and select one language.' +
-                  'The syntax is injected into https://github.com/oovm/vscode-toml/blob/master/extension/toml.tmLanguage.json',
+                    'The syntax is injected into https://github.com/oovm/vscode-toml/blob/master/extension/toml.tmLanguage.json',
 
                 'patterns': patterns,
             },
