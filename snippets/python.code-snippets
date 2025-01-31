@@ -59,12 +59,12 @@
       "\"\"\""
     ]
   },
-  "Javascript code block (string)": {
+  "JavaScript code block (string)": {
     "scope": "python",
     "prefix": [
       "js"
     ],
-    "description": "Insert a Javascript code block string",
+    "description": "Insert a JavaScript code block string",
     "body": [
       "\"\"\"//js",
       "\t$0",

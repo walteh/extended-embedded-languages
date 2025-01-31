@@ -138,7 +138,7 @@
           }
         },
         {
-          "comment": "Javascript-formatted triple-quoted strings",
+          "comment": "JavaScript-formatted triple-quoted strings",
           "name": "string.quoted.multi.embedded.python",
           "begin": "(?x)\n( (?i:u|r|f|rf|fr|) )\n('''|\"\"\")\n(?= (?i://js) \\b )",
           "end": "(\\2)",

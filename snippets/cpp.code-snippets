@@ -59,12 +59,12 @@
       ")ini\""
     ]
   },
-  "Javascript code block (string)": {
+  "JavaScript code block (string)": {
     "scope": "cpp",
     "prefix": [
       "js"
     ],
-    "description": "Insert a Javascript code block string",
+    "description": "Insert a JavaScript code block string",
     "body": [
       "R\"js(",
       "\t$0",

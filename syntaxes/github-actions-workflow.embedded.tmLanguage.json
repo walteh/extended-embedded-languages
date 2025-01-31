@@ -188,7 +188,7 @@
           ]
         },
         {
-          "comment": "Javascript-formatted block scalar strings",
+          "comment": "JavaScript-formatted block scalar strings",
           "name": "string.quoted.multi.embedded.yaml",
           "begin": "(?x)\n(?:(\\|)|(>)) ([1-9])? ([-+])? \\s* \n( \\# (?i:js|javascript) ) \\b \\s* \\n?",
           "beginCaptures": {

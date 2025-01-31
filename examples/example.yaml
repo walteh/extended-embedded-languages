@@ -81,7 +81,7 @@ embedded_examples:
     
     
 
-  # Javascript Example
+  # JavaScript Example
   sample_js: | #js
     // This is a basic javascript file
     const url = 'http://example.com';

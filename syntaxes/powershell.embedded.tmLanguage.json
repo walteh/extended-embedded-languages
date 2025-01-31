@@ -163,7 +163,7 @@
           }
         },
         {
-          "comment": "Javascript-formatted raw strings",
+          "comment": "JavaScript-formatted raw strings",
           "begin": "(?x)\n( (<\\#) \\s* \n(?i:js|javascript)\n\\s* (\\#>) )\n\\s* (@['\"])\n\\s*$",
           "end": "^(['\"]@)",
           "contentName": "meta.embedded.block.javascript.powershell source.js",

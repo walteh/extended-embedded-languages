@@ -102,7 +102,7 @@ last_file = "example.txt"
 
 
 //////////////////////////////////////////////////////////////////////
-// Javascript Example
+// JavaScript Example
 static const char* js_string = R"js(
 // This is a basic javascript file
 const url = 'http://example.com';

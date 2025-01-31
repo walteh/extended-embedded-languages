@@ -92,7 +92,7 @@ last_file = "example.txt"
 """
 
 
-# Javascript Example
+# JavaScript Example
 js_string = """//js
 // This is a basic javascript file
 const url = 'http://example.com';
