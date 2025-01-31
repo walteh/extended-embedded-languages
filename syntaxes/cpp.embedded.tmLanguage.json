@@ -168,7 +168,7 @@
           }
         },
         {
-          "comment": "Javascript-formatted raw strings",
+          "comment": "JavaScript-formatted raw strings",
           "begin": "(?x)\n\\b \n( (?:u|U|L|u8)? R ) \" \n( (?i:js|javascript) \\b [^\\(]* ) \n\\(",
           "end": "\\)(\\2)\"",
           "contentName": "meta.embedded.block.javascript.cpp source.js",

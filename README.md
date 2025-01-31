@@ -1,6 +1,6 @@
 # Extended Embedded Languages
 
-Adds syntax highlighting to C++, Go, Javascript, TypeScript, Python,
+Adds syntax highlighting to C++, Go, JavaScript, TypeScript, Python,
 Rust, PowerShell, YAML, TOML and Nix for strings containing source code.
 Dozens of languages can be used within the strings such as markup
 languages (HTML, LaTeX), query languages (SQL, GraphQL), data
@@ -17,7 +17,7 @@ language-specific editor features within those strings.
 
 This is similar to how you can select syntax highlighting within
 Markdown documents using a language specifier (e.g. ` ```py `) or
-switch between HTML, Javascript, and CSS in the same HTML document.
+switch between HTML, JavaScript, and CSS in the same HTML document.
 
 
 ## Features
@@ -53,9 +53,9 @@ the string as well:
 ![cpp_example.png](images/cpp_example.png)
 
 ---
-## Host language - Javascript, TypeScript, JSX and TSX
+## Host language - JavaScript, TypeScript, JSX and TSX
 
-Javascript and TypeScript template strings delimited by backticks
+JavaScript and TypeScript template strings delimited by backticks
 (e.g. `` `...text...` ``) can be multiline. This extension supports
 two different ways to specify the language in a multiline template
 string.
@@ -182,7 +182,7 @@ signal which language you are using.
 | HLSL                   | hlsl                         | `//hlsl`                                       |
 | HTML                   | html                         | `<!DOCTYPE`, `<html`, `<!--html`               |
 | Ini                    | ini                          | `;ini`                                         |
-| Javascript             | js, javascript               | `//js`                                         |
+| JavaScript             | js, javascript               | `//js`                                         |
 | JSON                   | json                         | [^1]                                           |
 | JSONC                  | jsonc                        | `//jsonc`                                      |
 | LaTeX                  | latex                        | `%latex`                                       |

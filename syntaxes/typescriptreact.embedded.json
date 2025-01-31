@@ -13,7 +13,7 @@
   ],
   "repository": {
     "template-string-with-preceeding-comment": {
-      "comment": "These patterns all match Typescript/Javascript template strings and select one language.The syntax is injected into https://github.com/microsoft/vscode/blob/main/extensions/typescript-basics/syntaxes/TypeScriptReact.tmLanguage.json",
+      "comment": "These patterns all match Typescript/JavaScript template strings and select one language.The syntax is injected into https://github.com/microsoft/vscode/blob/main/extensions/typescript-basics/syntaxes/TypeScriptReact.tmLanguage.json",
       "patterns": [
         {
           "comment": "Batch formatted template strings",
@@ -201,7 +201,7 @@
           ]
         },
         {
-          "comment": "Javascript formatted template strings",
+          "comment": "JavaScript formatted template strings",
           "begin": "(?x)\n(/\\*(?i:js|javascript)\\*/)\n\\s*\n([_\\$[:alpha:]][_\\$[:alnum:]]*)?\n(\\`)",
           "contentName": "meta.embedded.block.javascript.typescriptreact source.js",
           "end": "`",
@@ -1202,7 +1202,7 @@
       ]
     },
     "template-string-with-tag": {
-      "comment": "These patterns all match Typescript/Javascript template strings and select one language.The syntax is injected into https://github.com/microsoft/vscode/blob/main/extensions/typescript-basics/syntaxes/TypeScriptReact.tmLanguage.json",
+      "comment": "These patterns all match Typescript/JavaScript template strings and select one language.The syntax is injected into https://github.com/microsoft/vscode/blob/main/extensions/typescript-basics/syntaxes/TypeScriptReact.tmLanguage.json",
       "patterns": [
         {
           "comment": "Batch formatted template strings",
@@ -1325,7 +1325,7 @@
           ]
         },
         {
-          "comment": "Javascript formatted template strings",
+          "comment": "JavaScript formatted template strings",
           "begin": "(?x)\n(?i:js|javascript)\n(\\`)",
           "contentName": "meta.embedded.block.javascript.typescriptreact source.js",
           "beginCaptures": {

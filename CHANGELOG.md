@@ -52,7 +52,7 @@ Clarified "snippets" vs. "examples" in the code
 
 ## [v0.0.2]
 
-New host language: Javascript
+New host language: JavaScript
 
 New embedded languages: hlsl, glsl, wgsl, Metal
 

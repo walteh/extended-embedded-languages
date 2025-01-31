@@ -183,7 +183,7 @@
           }
         },
         {
-          "comment": "Javascript-formatted raw strings",
+          "comment": "JavaScript-formatted raw strings",
           "begin": "(/\\*(?i:js|javascript)\\*/)\\s*(b?r)(#*)(\")",
           "end": "(\")(\\3)",
           "contentName": "meta.embedded.block.javascript.rust source.js",
