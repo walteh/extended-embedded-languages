@@ -1,6 +1,6 @@
 {
-  "name": "extended-embedded-languages",
-  "displayName": "Extended Embedded Languages",
+  "name": "embedded-languages-vscode",
+  "displayName": "Embedded Languages",
   "publisher": "walteh",
   "icon": "images/EEL_icon_256.png",
   "description": "Adds syntax highlighting to C++, Go, JavaScript, TypesScript, Python, Rust and YAML for strings containing source code. Dozens of languages may be embedded, such as: markup (HTML, LaTeX), query (SQL, GraphQL), data (JSON, YAML), shader (GLSL, WSGL), scripts (Shell, Bat) and many more.",

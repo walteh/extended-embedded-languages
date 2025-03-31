@@ -1,0 +1,61 @@
+version: 3
+
+tasks:
+    lint:js:
+        dir: "utilities"
+        sources:
+            - "**/*.js"
+        generates:
+            - "**/*.js"
+        cmds:
+            - bunx eslint .
+
+    lint:js:fix:
+        dir: "utilities"
+        sources:
+            - "**/*.js"
+        generates:
+            - "**/*.js"
+        cmds:
+            - bunx eslint --fix .
+
+    install:utilities:
+        run: once
+        dir: "utilities"
+        sources:
+            - "package.json"
+            - "bun.lockb"
+        generates:
+            - "node_modules/**"
+        cmds:
+            - bun install
+
+    generate:examples:
+        deps: [install:utilities]
+        dir: "utilities"
+        sources:
+            - "example_assembler.js"
+            - "syntax_templates/**/*.js"
+        generates:
+            - "../examples/**/*"
+        cmds:
+            - bun run ./example_assembler.js
+
+    generate:syntax:
+        deps: [install:utilities]
+        dir: "utilities"
+        sources:
+            - "syntax_assembler.js"
+            - "syntax_templates/**/*.js"
+        generates:
+            - "../syntaxes/**/*.json"
+            - "../snippets/**/*.code-snippets"
+        cmds:
+            - bun run ./syntax_assembler.js
+
+    package:local:
+        deps: [generate:syntax, generate:examples]
+        cmds:
+            - bunx vsce pack --no-update-package-json --no-git-tag-version --no-dependencies $(git describe --tags | sed 's|v||g')
+            - mv ./embedded-languages-vscode-*.vsix ~/Downloads
+            - open https://marketplace.visualstudio.com/manage/publishers/walteh
