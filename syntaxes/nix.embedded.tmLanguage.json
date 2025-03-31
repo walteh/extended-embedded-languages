@@ -138,7 +138,7 @@
           }
         },
         {
-          "comment": "Javascript-formatted strings",
+          "comment": "JavaScript-formatted strings",
           "begin": "(/\\*(?i:js|javascript)\\*/)\\s*(\\'\\')",
           "end": "\\'\\'(?!\\$|\\'|\\\\.)",
           "contentName": "meta.embedded.block.javascript.nix source.js",

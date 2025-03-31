@@ -107,12 +107,12 @@ DO NOT HAND EDIT IT - changes will be lost.`,
         ],
         'repository': {
             'template-string-with-preceeding-comment': {
-                'comment': `These patterns all match Typescript/Javascript template strings and select one language.` +
+                'comment': `These patterns all match Typescript/JavaScript template strings and select one language.` +
                     `The syntax is injected into ${url}`,
                 'patterns': embeddedCommentPatterns,
             },
             'template-string-with-tag': {
-                'comment': `These patterns all match Typescript/Javascript template strings and select one language.` +
+                'comment': `These patterns all match Typescript/JavaScript template strings and select one language.` +
                     `The syntax is injected into ${url}`,
                 'patterns': embeddedTagPatterns,
             },

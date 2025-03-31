@@ -62,7 +62,7 @@ Makefile:
 
 * `make package` - Creates a .vsix package for testing
 
-* `make lint` - Runs ESLint on all javascript files
+* `make lint` - Runs ESLint on all JavaScript files
 
 * `make fix` - Runs ESLint and fixes auto-fixable problems
 
@@ -177,7 +177,7 @@ str = R"c_header(
   comments, put the language ID in a comment before the multiline
   string.
 ```js
-// Javascript
+// JavaScript
 str = /*css*/`
   .h1 { .color = #003366; }
 `
