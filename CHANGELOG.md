@@ -1,8 +1,18 @@
 # Change Log
 
-## [v1.4.0]
+## [v1.3.1]
 
-* Renamed for alternate deployment under publisher `walteh`
+* Renamed publisher to `walteh`
+
+* Add `pr-from-upstream-fork.sh` to create a PR from an upstream fork
+
+* Include changes from upstream forks:
+- https://github.com/ruschaaf/extended-embedded-languages/pull/19 by @RedCMD, in #6 
+- https://github.com/ruschaaf/extended-embedded-languages/pull/24 by @alexandear, in #5
+- https://github.com/ruschaaf/extended-embedded-languages/pull/25 by @walteh, in #1
+- https://github.com/ruschaaf/extended-embedded-languages/pull/26 by @walteh, in #3
+
+* Update README.md
 
 ## [v1.3.0]
 

@@ -1,5 +1,17 @@
 # Extended Embedded Languages
 
+> [!NOTE]
+> This is a fork of the original [Extended Embedded Languages](https://github.com/ruschaaf/extended-embedded-languages) extension published by [ruschaaf](https://github.com/ruschaaf).
+> This extension is published by [walteh](https://github.com/walteh) for those that need access to these changes.
+> As of 2025-03-31, these changes have been applied to this fork:
+> -   https://github.com/ruschaaf/extended-embedded-languages/pull/19 in #6
+> -   https://github.com/ruschaaf/extended-embedded-languages/pull/24 in #5
+> -   https://github.com/ruschaaf/extended-embedded-languages/pull/25 in #1
+> -   https://github.com/ruschaaf/extended-embedded-languages/pull/26 in #3
+
+> [!CAUTION]
+> If these changes are merged into the original repo, this extension may be deprecated.
+
 Adds syntax highlighting to C++, Go, JavaScript, TypeScript, Python,
 Rust, PowerShell, YAML, TOML and Nix for strings containing source code.
 Dozens of languages can be used within the strings such as markup
