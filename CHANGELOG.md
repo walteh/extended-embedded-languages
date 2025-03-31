@@ -1,5 +1,9 @@
 # Change Log
 
+## [v1.4.0]
+
+* Renamed for alternate deployment under publisher `walteh`
+
 ## [v1.3.0]
 
 * Added `Powershell` and `nix` host languages (thanks to [@DaRacci](https://github.com/DaRacci) for the contributions)
